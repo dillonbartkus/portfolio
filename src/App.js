@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Intro from './Intro'
+import Nav from './Nav'
+import About from './About'
+import Portfolio from './Portfolio'
+// import Contact from './Contact'
+import Footer from './Footer'
 
-function App() {
+export default function App() {
+
+  const homeRef = React.createRef()
+  const aboutRef = React.createRef()
+  const portRef = React.createRef()
+  const contactRef = React.createRef()
+
+  const scrollToSection = e => {
+    if (e === 'nav' || e === 'ABOUT') aboutRef.current.scrollIntoView({ behavior: 'smooth' })
+    e === 'HOME' && homeRef.current.scrollIntoView({ behavior: 'smooth' })
+    e === 'PROJECTS' && portRef.current.scrollIntoView({ behavior: 'smooth' })
+    e === 'CONTACT' && contactRef.current.scrollIntoView({ behavior: 'smooth' })
+  }  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+    <div className= "App">
+
+      <Intro homeRef = {homeRef} scroll = {scrollToSection} />
+
+      <Nav scroll = {scrollToSection}  />
+
+      <About aboutRef = {aboutRef} />
+
+      <Portfolio portRef = {portRef} />
+
+      {/* <Contact contactRef = {contactRef} /> */}
+
+      <Footer scroll = {scrollToSection} />
+
+    </div>
+
+  )
+}

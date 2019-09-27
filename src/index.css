@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +12,236 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  font-family: 'Raleway', sans-serif;
+}
+
+.intro {
+  text-align: center;
+  color: #FFFFFF;
+  background: #252934;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro > div {
+  width: 50%;
+}
+
+.intro > div > h2 {
+  font-weight: 200;
+  font-size: 30px;
+  font-family: 'Raleway Light', sans-serif;
+}
+
+.intro span {
+  color: #E0226E;
+  font-weight: 600;
+  font-family: 'Raleway Medium', sans-serif;
+}
+
+.intro h2:first-of-type {
+  margin-top: 0;
+}
+
+.introbutton {
+  outline: 1px solid #FFFFFF;
+  background: none;
+  color: #FFFFFF;
+  padding: 2%;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  margin: 5% auto 0 auto;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.introbutton > div {
+  width: 20%;
+  height: 3.3vh;
+  background-image: url(images/right.png);
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.introbutton.true > div, .introbutton:hover > div {
+  background-image: url(images/down.png);
+}
+
+.introbutton.true, .introbutton:hover {
+  background: #21C2C8;
+  outline: none;
+}
+
+.nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-color: #1B242E;
+  color: #FFFFFF;
+  border-bottom: 5px solid #21C2C8;
+  position: sticky;
+  top: 0;
+}
+
+.nav > * {
+  font-size: 18px;
+  margin: auto 5%;
+  cursor: pointer;
+}
+
+.nav > span:hover, .navitem.true {
+  color: #E0226E;
+}
+
+.about, .portfolio, .contact {
+  width: 100%;
+  padding-top: 75px;
+  color: #444649;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1%;
+  letter-spacing: 1px;
+}
+
+.titleunderline {
+  background-color: #444649;
+  width: 45px;
+  height: 3px;
+  margin: auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about > p {
+  margin: 5% 10%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.about > p > span {
+  color: #26A1DA;
+  margin: .5%;
+  cursor: pointer;
+}
+
+.about > img {
+  width: 80%;
+  margin: 2% auto;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 5% auto 0 auto;
+}
+
+.project {
+  width: 35%;
+  height: 40vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.project:hover {
+  
+}
+
+#log {
+  background-image: url(images/log.png);
+}
+
+#rugby {
+  background-image: url(images/rugby.png);
+}
+
+#paws {
+  background-image: url(images/paws.png);
+}
+
+#moms {
+  background-image: url(images/moms.png);
+}
+
+.footer {
+  background: #252934;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.backtotop > img {
+  position: relative;
+  top: -5vh;
+  width: 65%;
+  height: 10vh;
+  cursor: pointer;
+}
+
+.backtotop > img:hover {
+  filter: invert(0.1);
+}
+
+.medias {
+  width: 100%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.media {
+  width: 80px;
+  height: 80px;
+  margin: auto 3%;
+  background-position: center;
+  background-size: cover;
+}
+
+.media:hover {
+  filter: invert(0.1);
+}
+
+#linkedin {
+  background-image: url(images/linkedin.png);
+}
+
+#email {
+  background-image: url(images/email.png);
+}
+
+#git {
+  background-image: url(images/git.png);
+}
+
+#resume {
+  background-image: url(images/resume.png);
+}
+
+.copyright {
+  color: #7A7A7A;
+  margin-bottom: 5%;
+}
+
+.copyright > span {
+  color: #E0226E;
 }
