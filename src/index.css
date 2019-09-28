@@ -16,6 +16,7 @@ code {
 
 .App {
   font-family: 'Raleway', sans-serif;
+  background: #252934;
 }
 
 .intro {
@@ -58,7 +59,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33%;
+  width: 200px;
   margin: 5% auto 0 auto;
   cursor: pointer;
   transition: all .5s;
@@ -77,9 +78,10 @@ code {
   background-image: url(images/down.png);
 }
 
-.introbutton.true, .introbutton:hover {
+.introbutton.true, .introbutton:hover, input[type="submit"]:hover {
   background: #21C2C8;
   outline: none;
+  border: none;
 }
 
 .nav {
@@ -103,10 +105,11 @@ code {
   color: #E0226E;
 }
 
-.about, .portfolio, .contact {
+.about, .portfolio {
   width: 100%;
   padding-top: 75px;
   color: #444649;
+  background: #F5F5F5;
 }
 
 .title {
@@ -131,12 +134,14 @@ code {
   margin: 5% 10%;
   text-align: center;
   font-size: 18px;
+  line-height: 25px;
 }
 
 .about > p > span {
   color: #26A1DA;
-  margin: .5%;
+  margin: 4px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .about > img {
@@ -149,6 +154,7 @@ code {
   justify-content: center;
   flex-wrap: wrap;
   width: 75%;
+  padding-bottom: 5%;
   margin: 5% auto 0 auto;
 }
 
@@ -181,19 +187,87 @@ code {
   background-image: url(images/moms.png);
 }
 
+.divider {
+  width: 0;
+  height: 0;
+  border-left: 49.5vw solid #252933;
+  border-right: 49.5vw solid #252933;
+  border-top: 12vh solid #F5F5F5;
+}
+
+.contact {
+  color: #FFFFFF;
+  padding-top: 75px;
+}
+
+.contact > .titleunderline {
+  background-color: #FFFFFF;
+}
+
+.contact > form {
+  width: 60%;
+  margin: 5% auto 10% auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: .5% 0;
+  padding: 10px;
+  font-size: 18px;
+}
+
+textarea {
+  margin: .5% 0;
+  height: 15vh;
+  padding: 10px;
+  font-size: 18px;
+}
+
+input[type="submit"] {
+  width: 20%;
+  height: 5vh;
+  margin-top: 5%;
+  padding: 0;
+  align-self: flex-end;
+  background-color: transparent;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.success {
+  background-color: #04c986;
+  color: #157051;
+  text-align: center;
+  padding: 5px;
+  position: relative;
+}
+
+.success > span {
+  cursor: pointer;
+  margin-right: 0;
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}
+
 .footer {
-  background: #252934;
+  background: #1B242E;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10%;
+}
+
+.backtotop {
+  width: 100%;
+  text-align: center;
 }
 
 .backtotop > img {
   position: relative;
-  top: -5vh;
-  width: 65%;
-  height: 10vh;
+  top: -36px;
+  width: 75px;
+  height: 75px;
   cursor: pointer;
 }
 
@@ -244,4 +318,25 @@ code {
 
 .copyright > span {
   color: #E0226E;
+  letter-spacing: .5px;
+}
+
+@media (max-width: 700px) {
+
+  .intro > div {
+    width: 75%;
+  }
+
+  .backtotop > img {
+    /* width: 100px; */
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .nav > * {
+    font-size: 13px;
+  }
+
 }

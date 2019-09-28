@@ -1,40 +1,45 @@
 import React, { useState } from 'react'
 
-export default function Nav({ scroll }) {
+export default function Nav({ scroll, nav, divide, about, port }) {
 
-    const [homeClicked, setHomeClicked] = useState(true)
-    const [aboutClicked, setAboutClicked] = useState(false)
-    const [projectClicked, setProjectClicked] = useState(false)
+    setInterval( () => {
+        const scroll = window.scrollY        
+        if(scroll >= 0 && scroll < about.current.offsetTop) {
+            setHomeActive(true)
+        } else setHomeActive(false)
+        if(scroll >= about.current.offsetTop && scroll < port.current.offsetTop) {
+            setAboutActive(true)
+        } else setAboutActive(false)
+        if(scroll >= port.current.offsetTop && scroll < divide.current.offsetTop) {
+            setPortActive(true)
+        } else setPortActive(false)
+        if(scroll >= divide.current.offsetTop) {
+            setContactActive(true)
+        } else setContactActive(false)
+    }, 100)
+
+    const [homeActive, setHomeActive] = useState(false)
+    const [aboutActive, setAboutActive] = useState(false)
+    const [portActive, setPortActive] = useState(false)
+    const [contactActive, setContactActive] = useState(false)
     
     return(
 
-        <div className = 'nav'>
+        <div
+        ref = {nav}
+        className = 'nav'>
 
-            <span className = {`navitem ${homeClicked}`} onClick = { e => {
-                setHomeClicked(true)
-                setAboutClicked(false)
-                setProjectClicked(false)
-                scroll(e.target.innerHTML)
-            }}
+            <span className = {`navitem ${homeActive}`} onClick = { () => scroll('home') }
             >HOME</span>
 
-            <span className = {`navitem ${aboutClicked}`} onClick = { e => {
-                setAboutClicked(true)
-                setHomeClicked(false)
-                setProjectClicked(false)
-                scroll(e.target.innerHTML)
-            }}
+            <span className = {`navitem ${aboutActive}`} onClick = { () => scroll('about') }
             >ABOUT</span>
 
-            <span className = {`navitem ${projectClicked}`} onClick = { e => {
-                setProjectClicked(true)
-                setHomeClicked(false)
-                setAboutClicked(false)
-                scroll(e.target.innerHTML)
-            }}
+            <span className = {`navitem ${portActive}`} onClick = { () => scroll('projects') }
             >PROJECTS</span>
 
-            {/* <span onClick = { e => scroll(e.target.innerHTML) }>CONTACT</span> */}
+            <span className = {`navitem ${contactActive}`} onClick = { () => scroll('contact') }
+            >CONTACT</span>
             
         </div>
     )

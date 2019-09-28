@@ -8,7 +8,7 @@ export default function Footer({ scroll }) {
         <div className = 'footer'>
 
             <div className = 'backtotop'
-            onClick = { () => scroll('HOME') }
+            onClick = { () => scroll('home') }
             >
             <img src = {backtotop} alt = '' />
             </div>
