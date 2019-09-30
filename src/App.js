@@ -28,7 +28,7 @@ export default function App() {
 
       <Intro homeRef = {homeRef} scroll = {scrollToSection} />
 
-      <Nav nav = {navRef} divide = {divideRef} about = {aboutRef} port = {portRef} scroll = {scrollToSection}  />
+      <Nav home = {homeRef} nav = {navRef} divide = {divideRef} about = {aboutRef} port = {portRef} scroll = {scrollToSection}  />
 
       <About aboutRef = {aboutRef} />
 

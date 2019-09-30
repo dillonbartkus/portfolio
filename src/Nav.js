@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 
-export default function Nav({ scroll, nav, divide, about, port }) {
+export default function Nav({ scroll, home, nav, divide, about, port }) {
 
     setInterval( () => {
-        const scroll = window.scrollY        
+        const scroll = window.scrollY
         if(scroll >= 0 && scroll < about.current.offsetTop) {
             setHomeActive(true)
         } else setHomeActive(false)
-        if(scroll >= about.current.offsetTop && scroll < port.current.offsetTop) {
+        if(scroll >= about.current.offsetTop && scroll < home.current.scrollHeight + about.current.scrollHeight + nav.current.scrollHeight) {
             setAboutActive(true)
         } else setAboutActive(false)
         if(scroll >= port.current.offsetTop && scroll < divide.current.offsetTop) {
