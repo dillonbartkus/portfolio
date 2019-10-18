@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-export default function Nav({ scroll, home, nav, divide, about, port }) {
+export default function Nav({ scroll, darken, home, nav, divide, about }) {
+    
 
     setInterval( () => {
         const scroll = window.scrollY
@@ -10,7 +11,7 @@ export default function Nav({ scroll, home, nav, divide, about, port }) {
         if(scroll >= about.current.offsetTop && scroll < home.current.scrollHeight + about.current.scrollHeight + nav.current.scrollHeight) {
             setAboutActive(true)
         } else setAboutActive(false)
-        if(scroll >= port.current.offsetTop && scroll < divide.current.offsetTop) {
+        if(scroll >= home.current.scrollHeight + nav.current.scrollHeight + about.current.scrollHeight && scroll < divide.current.offsetTop) {
             setPortActive(true)
         } else setPortActive(false)
         if(scroll >= divide.current.offsetTop) {
@@ -27,7 +28,7 @@ export default function Nav({ scroll, home, nav, divide, about, port }) {
 
         <div
         ref = {nav}
-        className = 'nav'>
+        className = {`nav ${darken ? 'dark' : ''}`} >
 
             <span className = {`navitem ${homeActive}`} onClick = { () => scroll('home') }
             >HOME</span>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Contact({ contactRef, divideRef }) {
+export default function Contact({ contactRef, divideRef, darken }) {
 
     return(
 
@@ -8,11 +8,12 @@ export default function Contact({ contactRef, divideRef }) {
 
         <div
         ref = {divideRef}
-        className = 'divider'></div>
+        className = {`divider ${darken ? 'dark' : ''}`}>
+        </div>
 
         <div
         ref = {contactRef}
-        className = 'contact'
+        className = {`contact ${darken ? 'dark' : ''}`}
         >
 
             <h1 className = 'title'>CONTACT</h1>

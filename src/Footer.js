@@ -1,16 +1,16 @@
 import React from 'react'
 import backtotop from './images/backtotop.png'
 
-export default function Footer({ scroll }) {
+export default function Footer({ scroll, darken }) {
 
     return(
 
-        <div className = 'footer'>
+        <div className = {`footer ${darken ? 'dark' : ''}`}>
 
-            <div className = 'backtotop'
+            <div className = 'backtotop'>
+            <img src = {backtotop} alt = ''
             onClick = { () => scroll('home') }
-            >
-            <img src = {backtotop} alt = '' />
+            />
             </div>
 
             <div className = 'medias'>

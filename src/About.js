@@ -1,13 +1,14 @@
 import React from 'react'
 import skills from './images/skills.png'
 
-export default function About({ aboutRef }) {
+export default function About({ aboutRef, darken }) {
 
     return(
 
         <div
         ref = {aboutRef}
-        className = 'about'>
+        className = {`about ${darken ? 'dark' : ''}`}
+        >
 
             <h1 className = 'title'>ABOUT</h1>
             <div className = 'titleunderline'></div>
