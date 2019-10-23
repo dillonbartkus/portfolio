@@ -1,5 +1,5 @@
 .carousel {
-    height: 60%;
+    height: 55%;
 }
 
 .flickity-viewport {
@@ -7,11 +7,20 @@
 }
 
 .carousel-cell {
+    height: 100%;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.carousel-cell > image {
+.carousel-cell.portrait > img {
+    width: auto;
+    height: 100%;
+}
+
+.carousel-cell > img {
+    height: 100%;
     width: 100%;
 }
   

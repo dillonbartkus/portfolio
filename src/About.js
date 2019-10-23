@@ -1,5 +1,5 @@
 import React from 'react'
-import skills from './images/skills.png'
+import Skills from './Skills'
 
 export default function About({ aboutRef, darken }) {
 
@@ -19,8 +19,7 @@ export default function About({ aboutRef, darken }) {
                 >Log-Ai.</span>
             I am passionate about creating new technology that empowers individuals to find the resources and tools to enhance their day-to-day lives.</p>
 
-            <img src = {skills} alt = '' />
-
+            <Skills />
 
         </div>
 

@@ -148,9 +148,36 @@ code {
   font-weight: 600;
 }
 
-.about > img {
-  width: 80%;
-  margin: 2% auto;
+.skills {
+  display: flex;
+}
+
+.skill-section {
+  width: 40%;
+}
+
+.skill-section:first-of-type {
+  margin-left: 10%;
+}
+
+.skill-section:last-of-type {
+  margin-right: 10%;
+}
+
+.skill-listing {
+  padding: 5% 0;
+  display: flex;
+  align-items: center;
+}
+
+.skill-listing > img {
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+}
+
+.skill-listing > p {
+  font-size: 20px;
 }
 
 .projects {
@@ -234,9 +261,9 @@ code {
 .popup {
   position: fixed;
   top: 0;
-  width: 75%;
+  width: 60%;
   height: calc(100vh);
-  margin: 0 12.5%;
+  margin: 0 20%;
   display: flex;
   justify-content: center;
   z-index: 1;
@@ -410,7 +437,7 @@ input[type="submit"] {
 
 /* TABLET */
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
 
   .intro > div {
     width: 75%;
@@ -422,6 +449,18 @@ input[type="submit"] {
 
   input[type="submit"] {
     width: 33%;
+  }
+
+  .project {
+    height: 35vh;
+  }
+
+  .project > button {
+    bottom: -17.5vh;
+  }
+
+  .project:hover > button {
+    bottom: -10vh;
   }
 
 }

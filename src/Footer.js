@@ -16,7 +16,7 @@ export default function Footer({ scroll, darken }) {
             <div className = 'medias'>
 
                 <div className = 'media' id = 'linkedin'
-                onClick = { () => window.open('https://www.linkedin.com/in/dillon-bartkus-7594b396/') }
+                onClick = { () => window.open('https://www.linkedin.com/in/dillonbartkus') }
                 ></div>
 
                 <div className = 'media' id = 'email'
