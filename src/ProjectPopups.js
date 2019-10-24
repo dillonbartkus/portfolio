@@ -1,6 +1,9 @@
 import React from 'react'
 import './carousel.css'
-import POne from './POne'
+import Log from './Log'
+import Paws from './Paws'
+import Moms from './Moms'
+import Rugby from './Rugby'
 
 export default function({ project }) {
 
@@ -11,7 +14,22 @@ export default function({ project }) {
 
             {
                 project === 'log' &&
-                <POne />
+                <Log />
+            }
+
+            {
+                project === 'paws' &&
+                <Paws />
+            }
+
+            {
+                project === 'moms' &&
+                <Moms />
+            }
+
+            {
+                project === 'rugby' &&
+                <Rugby />
             }
             
         </div>

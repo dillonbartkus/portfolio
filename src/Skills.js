@@ -1,12 +1,24 @@
 import React from 'react'
+import SpecialSkills from './SpecialSkills'
+import LesserSkills from './LesserSkills'
 import js from './images/js.png'
 import react from './images/react.png'
 import redux from './images/redux.png'
+import graphql from './images/graphql.png'
+import babel from './images/babel.png'
+import node from './images/node.png'
+import aws from './images/aws.png'
+import jest from './images/jest.png'
+import webpack from './images/webpack.png'
+import gitlab from './images/gitlab.png'
+import sass from './images/sass.png'
 
-export default function Skills() {
+export default function Skills() {    
 
-    const images = [js, react, redux]
-    const skills = ['Javascript (ES6)', 'React', 'Redux']
+    const specialImages = [js, react, webpack, babel, sass]
+    const specialSkills = ['Javascript (ES6)', 'React', 'Webpack', 'Babel', 'Sass']
+    const lesserImages = [redux, graphql, aws, jest, node, gitlab]
+    const lesserSkills = ['Redux', 'GraphQL', 'AWS', 'Jest', 'Node', 'GitLab CI']
 
     return(
 
@@ -16,21 +28,7 @@ export default function Skills() {
 
                 <h2>I specialize in...</h2>
 
-                {images.map( (img, id) => <div className = 'skill-listing'> <img src = {img} alt = {id} /> <p> {skills[id]} </p> </div> )}
-
-                {/* <div className = 'skill-listing'>
-
-                    <img src = {js} alt = '' />
-                    <p>Javascript (ES6)</p>
-
-                </div>
-
-                <div className = 'skill-listing'>
-
-                    <img src = {react} alt = '' />
-                    <p>React</p>
-
-                </div> */}
+                <SpecialSkills images = {specialImages} skills = {specialSkills} />
 
             </div>
 
@@ -38,12 +36,7 @@ export default function Skills() {
 
                 <h2>I have experience with...</h2>
 
-                <div className = 'skill-listing'>
-
-                    <img src = {redux} alt = '' />
-                    <p>Redux</p>
-
-                </div>
+                <LesserSkills images = {lesserImages} skills = {lesserSkills} />
 
             </div>
 

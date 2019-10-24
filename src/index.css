@@ -153,19 +153,23 @@ code {
 }
 
 .skill-section {
-  width: 40%;
+  width: 30%;
+  margin: 0 auto;
 }
 
 .skill-section:first-of-type {
-  margin-left: 10%;
+  margin-left: 20%;
 }
 
 .skill-section:last-of-type {
+  /* margin-left: 10%; */
   margin-right: 10%;
 }
 
 .skill-listing {
-  padding: 5% 0;
+  padding: 4% 0;
+  width: 100%;
+  margin: auto;
   display: flex;
   align-items: center;
 }
@@ -173,7 +177,7 @@ code {
 .skill-listing > img {
   width: 50px;
   height: 50px;
-  margin-right: 25px;
+  margin-right: 10%;
 }
 
 .skill-listing > p {
@@ -253,19 +257,39 @@ code {
   background-image: url(images/moms.png);
 }
 
-.main {
-  display: flex;
-  flex-flow: column;
+.project.dark:hover > * {
+  visibility: hidden;
+}
+
+#log.project.dark:hover {
+  background-image: url(images/log.png) !important;
+}
+
+#rugby.project.dark:hover {
+  background-image: url(images/rugby.png) !important;
+}
+
+#moms.project.dark:hover {
+  background-image: url(images/moms.png) !important;
+}
+
+#paws.project.dark:hover {
+  background-image: url(images/paws.png) !important;
+}
+
+.dark {
+  filter: brightness(0.5);
 }
 
 .popup {
   position: fixed;
   top: 0;
-  width: 60%;
-  height: calc(100vh);
-  margin: 0 20%;
-  display: flex;
-  justify-content: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 100vh;
   z-index: 1;
   background-color: #fff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
@@ -273,10 +297,20 @@ code {
 
 .project-details {
   width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
-.dark {
-  filter: brightness(0.6);
+.project-link {
+  cursor: pointer;
+  color: #38a1f2;
+  margin: 5% auto;
+}
+
+.project-desc {
+  font-size: 20px;
+  margin: auto 10%;
+  line-height: 26px;
 }
 
 .divider {
@@ -321,9 +355,10 @@ textarea {
 
 input[type="submit"] {
   width: 25%;
-  height: 6vh;
-  margin-top: 5%;
-  padding: 0;
+  height: 50px;
+  margin-top: 3%;
+  font-weight: 600;
+  letter-spacing: .75px;
   align-self: flex-end;
   background-color: transparent;
   color: #FFFFFF;

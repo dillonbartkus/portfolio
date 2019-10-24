@@ -14,9 +14,7 @@ export default function Portfolio({ portRef, show, darken }) {
 
             <div className = 'projects'>
 
-                <div className = 'project' id = 'log'
-                // onClick = { () => window.open('https://log-ai.com') }
-                >
+                <div className = {`project ${darken ? 'dark' : ''}`} id = 'log'>
                     <h1>Log.Ai</h1>
                     <button
                     onClick = { e => {
@@ -26,9 +24,7 @@ export default function Portfolio({ portRef, show, darken }) {
                     >LEARN MORE</button>
                 </div>
 
-                <div className = 'project' id = 'rugby'
-                // onClick = { () => window.open('https://playrugbyusa.org/') }
-                >
+                <div className = {`project ${darken ? 'dark' : ''}`} id = 'rugby'>
                     <h1>Play Rugby USA</h1>
                     <button
                     onClick = { e => {
@@ -38,9 +34,7 @@ export default function Portfolio({ portRef, show, darken }) {
                     >LEARN MORE</button>
                 </div>
 
-                <div className = 'project' id = 'paws'
-                // onClick = { () => window.open('https://paws-on.herokuapp.com/') }
-                >
+                <div className = {`project ${darken ? 'dark' : ''}`} id = 'paws'>
                     <h1>Paws-On</h1>
                     <button
                     onClick = { e => {
@@ -50,9 +44,7 @@ export default function Portfolio({ portRef, show, darken }) {
                     >LEARN MORE</button>
                 </div>
 
-                <div className = 'project' id = 'moms'
-                // onClick = { () => window.open('https://savingmothers.org/') }
-                >
+                <div className = {`project ${darken ? 'dark' : ''}`} id = 'moms'>
                     <h1>Saving Mothers</h1>
                     <button
                     onClick = { e => {
