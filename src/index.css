@@ -30,10 +30,6 @@ code {
   align-items: center;
 }
 
-.intro > div {
-  width: 50%;
-}
-
 .intro > div > h2 {
   font-weight: 200;
   font-size: 30px;
@@ -54,13 +50,13 @@ code {
   outline: 1px solid #FFFFFF;
   background: none;
   color: #FFFFFF;
-  padding: 2%;
+  padding: 15px 20px;
   font-size: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 200px;
-  margin: 5% auto 0 auto;
+  margin: 40px auto 0 auto;
   cursor: pointer;
   transition: all .5s;
 }
