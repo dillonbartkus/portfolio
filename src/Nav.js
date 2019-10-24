@@ -30,17 +30,17 @@ export default function Nav({ scroll, darken, home, nav, divide, about }) {
         ref = {nav}
         className = {`nav ${darken ? 'dark' : ''}`} >
 
-            <span className = {`navitem ${homeActive}`} onClick = { () => scroll('home') }
-            >HOME</span>
+            <div className = {`navitem ${homeActive}`} onClick = { () => scroll('home') }
+            >HOME</div>
 
-            <span className = {`navitem ${aboutActive}`} onClick = { () => scroll('about') }
-            >ABOUT</span>
+            <div className = {`navitem ${aboutActive}`} onClick = { () => scroll('about') }
+            >ABOUT</div>
 
-            <span className = {`navitem ${portActive}`} onClick = { () => scroll('projects') }
-            >PROJECTS</span>
+            <div className = {`navitem ${portActive}`} onClick = { () => scroll('projects') }
+            >PROJECTS</div>
 
-            <span className = {`navitem ${contactActive}`} onClick = { () => scroll('contact') }
-            >CONTACT</span>
+            <div className = {`navitem ${contactActive}`} onClick = { () => scroll('contact') }
+            >CONTACT</div>
             
         </div>
     )

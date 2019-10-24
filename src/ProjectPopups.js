@@ -5,12 +5,16 @@ import Paws from './Paws'
 import Moms from './Moms'
 import Rugby from './Rugby'
 
-export default function({ project }) {
+export default function({ project, setProject }) {
 
     return(
 
         <div className = 'popup'
         onClick = { e => e.stopPropagation()} >
+
+            <div className = 'close-popup'
+            onClick = { () => setProject('') }
+            >X</div>
 
             {
                 project === 'log' &&

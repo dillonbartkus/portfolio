@@ -22,7 +22,7 @@ export default function Main({ scroll, aboutRef, portRef, divideRef, contactRef,
             {
             showProject &&
 
-                <ProjectPopups project = {showProject} />
+                <ProjectPopups project = {showProject} setProject = {setShowProject} />
 
             }
 
