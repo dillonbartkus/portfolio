@@ -149,20 +149,14 @@ code {
 }
 
 .skills {
+  width: 80%;
+  margin: auto;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .skill-section {
   width: 30%;
-  margin: 0 auto;
-}
-
-.skill-section:first-of-type {
-  margin-left: 20%;
-}
-
-.skill-section:last-of-type {
-  margin-right: 10%;
 }
 
 .skill-listing {
@@ -181,6 +175,10 @@ code {
 
 .skill-listing > p {
   font-size: 20px;
+}
+
+.mobile-skill {
+  display: none;
 }
 
 .projects {
@@ -570,6 +568,32 @@ input[type="submit"] {
 
 @media only screen and (max-width: 900px) {
 
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill-section {
+    margin: 0 10% !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  .skill-listing {
+    margin: auto 4%;
+    width: auto;
+    display: inline-block;
+  }
+
+  .skill-listing > p {
+    display: none;
+  }
+
+  .mobile-skill {
+    display: block;
+    transition: all 1s ease-out;
+  }
+
   .project {
     width: 50%;;
   }
@@ -583,18 +607,65 @@ input[type="submit"] {
   }
 
   .close-popup {
-    color: red;
-    width: 50px;
-    height: 50px;
+    color: gray;
+    width: 30px;
+    height: 40px;
     font-size: 30px;
     position: relative;
-    left: calc(100% - 25px);
+    left: calc(100% - 33px);
     top: 5px;
     cursor: pointer;
   }
 
+  .carousel {
+    height: 50%;
+  }
+
   .nav > * {
     font-size: 16px;
+  }
+
+}
+
+/* IPAD */
+
+@media only screen
+and (min-width: 768px) 
+and (max-height: 1024px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 1.5)  {
+
+  .popup {
+    width: 100%;
+    height: 80vh;
+    top: 10vh;
+  }
+
+  .close-popup {
+    width: 100px;
+    height: 50px;
+    font-size: 40px;
+  }
+
+  .project-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel {
+    order: 3;
+  }
+
+  .project-link {
+    order: 2;
+    font-size: 30px;
+    margin-bottom: 7%;
+  }
+
+  .project-desc {
+    font-size: 24px;
+    margin: 5%;
+    order: 1;
   }
 
 }
@@ -607,6 +678,10 @@ input[type="submit"] {
     font-size: 13px;
   }
 
+  .intro > div {
+    width: 80%;
+  }
+
   .intro > div > h2 {
     font-size: 22px;
   }
@@ -615,17 +690,41 @@ input[type="submit"] {
     padding: 4%;
   }
 
-  .skill-section {
-    margin: 0 !important;
-    width: 50%;
+  .mobile-skill {
+    opacity: 0;
+  }
+
+  .mobile-skill.true {
+    opacity: 1;
+  }
+
+  .project {
+    width: 80%;
   }
 
   .popup {
     width: 100%;
   }
 
+  .project-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel {
+    order: 3;
+    height: 50% !important;
+  }
+
+  .project-link {
+    order: 2;
+    margin: 5% auto;
+  }
+
   .project-desc {
     font-size: 16px;
+    margin: 5%;
+    order: 1;
   }
 
   .title {
@@ -636,10 +735,6 @@ input[type="submit"] {
     height: 50px;
     width: 50px;
     top: -25px;
-  }
-
-  .project {
-    width: 80%;
   }
 
   .contact > form {
@@ -657,6 +752,7 @@ input[type="submit"] {
 
   input[type="submit"] {
     margin-top: 2%;
+    width: 33%;
   }
 
 }

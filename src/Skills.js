@@ -16,7 +16,7 @@ import sass from './images/sass.png'
 export default function Skills() {    
 
     const specialImages = [js, react, webpack, babel, sass]
-    const specialSkills = ['Javascript (ES6)', 'React', 'Webpack', 'Babel', 'Sass']
+    const specialSkills = ['JS (ES6)', 'React', 'Webpack', 'Babel', 'Sass']
     const lesserImages = [redux, graphql, aws, jest, node, gitlab]
     const lesserSkills = ['Redux', 'GraphQL', 'AWS', 'Jest', 'Node', 'GitLab CI']
 

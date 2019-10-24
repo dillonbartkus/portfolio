@@ -1,18 +1,8 @@
 import React from 'react'
+import Skill from './Skill'
 
 export default function SpecialSkills({ images, skills }){
 
-    return(    
+    return images.map( (img, id) => <div className = 'skill-listing' key = {id}> <Skill img = {img} skill = {skills[id]} /> </div> )
 
-        images.map( (img, id) => {
-            return(
-                <div className = 'skill-listing' key = {id}>
-
-                    <img src = {img} alt = '' />
-                    <p>{skills[id]}</p>
-
-                </div>
-            )
-        } )
-    )
 }
