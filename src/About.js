@@ -13,11 +13,16 @@ export default function About({ aboutRef, darken }) {
             <h1 className = 'title'>ABOUT</h1>
             <div className = 'titleunderline'></div>
 
-            <p>A mission-driven, analytical Front End developer, who believes that the best work is accomplished in a collaborative environment. Currently working at
-                <span
-                onClick = { () => window.open('https://log-ai.com') }
+            <p>
+                A Front-End web developer with a knowledge of the back-end. I build responsive web-apps for desktop
+                and mobile using test-driven as well as behavior-driven processes. I am knowledgeable about Javascript design patterns,
+                git pipelines, and unit / integration testing.
+
+                Currently working at
+                <span onClick = { () => window.open('https://log-ai.com') }
                 >Log-Ai.</span>
-            I am passionate about creating new technology that empowers individuals to find the resources and tools to enhance their day-to-day lives.</p>
+
+            </p>
 
             <Skills />
 

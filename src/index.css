@@ -145,18 +145,18 @@ code {
 }
 
 .skills {
-  width: 80%;
+  width: 70%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
 }
 
 .skill-section {
-  width: 30%;
+  min-width: 33%;
 }
 
 .skill-listing {
-  padding: 4% 0;
+  padding: 5% 0;
   width: 100%;
   margin: auto;
   display: flex;
@@ -169,7 +169,7 @@ code {
   margin-right: 10%;
 }
 
-.skill-listing > p {
+.skill-listing > div {
   font-size: 20px;
 }
 
@@ -510,10 +510,6 @@ input[type="submit"] {
     width: 40%;
   }
 
-  .skill-listing > p {
-    font-size: 25px;
-  }
-
   .skill-section > h2 {
     font-size: 30px;
   }
@@ -581,8 +577,9 @@ input[type="submit"] {
     display: inline-block;
   }
 
-  .skill-listing > p {
-    display: none;
+  .skill-listing > div {
+    margin-top: 5%;
+    font-size: 16px;
   }
 
   .mobile-skill {
@@ -663,6 +660,14 @@ and (-webkit-min-device-pixel-ratio: 1.5)  {
     margin: 5%;
     order: 1;
   }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+.popup {
+  width: 100%;
+}
 
 }
 
