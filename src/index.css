@@ -102,6 +102,10 @@ code {
   color: #E0226E;
 }
 
+.main {
+  overflow: hidden;
+}
+
 .about, .portfolio, .contact {
   padding-top: 100px;
 }
@@ -152,7 +156,11 @@ code {
 }
 
 .skill-section {
-  min-width: 33%;
+  width: 40%;
+}
+
+.skill-section > h2 {
+  font-size: 23px;
 }
 
 .skill-listing {
@@ -289,8 +297,7 @@ code {
 }
 
 .close-popup {
-  width: 0;
-  height: 0;
+  display: none;
 }
 
 .project-details {
@@ -301,8 +308,12 @@ code {
 
 .project-link {
   cursor: pointer;
-  color: #38a1f2;
+  color: #E0226E;
   margin: 5% auto;
+}
+
+.project-link:hover {
+  filter: invert(0.25);
 }
 
 .project-desc {
@@ -463,6 +474,10 @@ input[type="submit"] {
     font-size: 20px;
   }
 
+  .carousel {
+    height: 50% !important;
+  }
+
   .project {
     width: 35%;
     height: 40vh;
@@ -561,6 +576,7 @@ input[type="submit"] {
 @media only screen and (max-width: 900px) {
 
   .skills {
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -601,8 +617,7 @@ input[type="submit"] {
 
   .close-popup {
     color: gray;
-    width: 30px;
-    height: 40px;
+    display: block;
     font-size: 30px;
     position: relative;
     left: calc(100% - 33px);
@@ -691,16 +706,25 @@ and (-webkit-min-device-pixel-ratio: 1.5)  {
     padding: 4%;
   }
 
-  .mobile-skill {
-    opacity: 0;
-  }
-
-  .mobile-skill.true {
-    opacity: 1;
-  }
-
   .project {
     width: 80%;
+    cursor: pointer;
+  }
+
+  #log:hover {
+    background-image: url(images/log.png) !important;
+  }
+  
+  #rugby:hover {
+    background-image: url(images/rugby.png) !important;
+  }
+  
+  #moms:hover {
+    background-image: url(images/moms.png) !important;
+  }
+  
+  #paws:hover {
+    background-image: url(images/paws.png) !important;
   }
 
   .popup {
@@ -714,6 +738,7 @@ and (-webkit-min-device-pixel-ratio: 1.5)  {
 
   .carousel {
     order: 3;
+    margin-top: 5%;
     height: 50% !important;
   }
 
@@ -754,6 +779,15 @@ and (-webkit-min-device-pixel-ratio: 1.5)  {
   input[type="submit"] {
     margin-top: 2%;
     width: 33%;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  .carousel {
+    height: 35% !important;
+    margin-top: 10%;
   }
 
 }
