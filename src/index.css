@@ -143,9 +143,8 @@ code {
 
 .about > p > span {
   color: #26A1DA;
-  margin: 4px;
+  margin: 6px;
   cursor: pointer;
-  font-weight: 600;
 }
 
 .skills {

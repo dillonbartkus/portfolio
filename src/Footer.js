@@ -33,7 +33,7 @@ export default function Footer({ scroll, darken }) {
 
             </div>
 
-            <h4 className = 'copyright'>DILLON BARTKUS <span>© 2019</span></h4>
+            <h4 className = 'copyright'>DILLON BARTKUS <span>© 2020</span></h4>
 
         </div>
     )
