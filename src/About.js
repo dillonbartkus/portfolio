@@ -17,8 +17,8 @@ export default function About({ aboutRef, darken }) {
                 A Front-End web developer, who enjoys building responsive web-apps for desktop and mobile using test-driven as well as behavior-driven processes. I am knowledgeable about Javascript design patterns, git pipelines, and unit / integration testing. I have experience working with UX and UI designers, data scientists and back-end engineers.
 
                 Currently working at
-                <span onClick = { () => window.open('https://log-ai.com') }
-                >Log-Ai.</span>
+                <span onClick = { () => window.open('https://1800flowers.com') }
+                >1800 Flowers.com.</span>
 
             </p>
 
