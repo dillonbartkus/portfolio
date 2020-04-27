@@ -18,7 +18,7 @@ export default function Intro({ scroll, homeRef }) {
                 <div
                 onClick = { () => {
                     setShowSite(true)
-                    scroll('nav')
+                    scroll('projects')
                     setTimeout( () => setShowSite(false), 1000 )
                 }}
                 className = {`introbutton ${showSite}`} >View my work
