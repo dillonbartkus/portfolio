@@ -42,7 +42,7 @@ export default function() {
             {Carousel()}
 
             <h2
-            onClick = { () => window.open('https://paws-on.herokuapp.com') }
+            onClick = { () => window.open('https://paws-on.org') }
             className = 'project-link'>Visit Site</h2>
 
             <p className = 'project-desc'>
