@@ -9,6 +9,8 @@ export default function Contact({ contactRef, divideRef, darken }) {
         <div
         ref = {divideRef}
         className = {`divider ${darken ? 'dark' : ''}`}>
+            <div className = 'first-half'></div>
+            <div className = 'second-half'></div>
         </div>
 
         <div

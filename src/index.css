@@ -318,10 +318,17 @@ code {
 }
 
 .divider {
-  width: 0;
-  height: 0;
-  border-left: 50vw solid #252933;
-  border-right: 50vw solid #252933;
+  display: flex;
+  overflow: hidden;
+}
+
+.first-half {
+  border-left: calc(50vw) solid #252933;
+  border-top: 12vh solid #F5F5F5;
+}
+
+.second-half {
+  border-right: calc(50vw) solid #252933;
   border-top: 12vh solid #F5F5F5;
 }
 
