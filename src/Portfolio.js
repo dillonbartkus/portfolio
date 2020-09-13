@@ -8,7 +8,7 @@ export default function Portfolio({ portRef, show, darken }) {
         setScreenWidth(window.innerWidth)
     }, 1000)
 
-    if (screenWidth >= 600) return(
+    if (screenWidth >= 600) return (
 
         <div
         ref = {portRef}
@@ -30,12 +30,12 @@ export default function Portfolio({ portRef, show, darken }) {
                     >LEARN MORE</button>
                 </div>
 
-                <div className = {`project ${darken ? 'dark' : ''}`} id = 'rugby'>
-                    <h1>Play Rugby USA</h1>
+                <div className = {`project ${darken ? 'dark' : ''}`} id = 'flowers'>
+                    <h1>1800Flowers</h1>
                     <button
                     onClick = { e => {
                         e.stopPropagation()
-                        show('rugby')
+                        show('flowers')
                     }}
                     >LEARN MORE</button>
                 </div>
@@ -65,7 +65,7 @@ export default function Portfolio({ portRef, show, darken }) {
         </div>
     )
 
-    else return(
+    else return (
 
         <div
         ref = {portRef}
@@ -84,10 +84,10 @@ export default function Portfolio({ portRef, show, darken }) {
                     }} >
                 </div>
 
-                <div className = {`project ${darken ? 'dark' : ''}`} id = 'rugby'
+                <div className = {`project ${darken ? 'dark' : ''}`} id = 'flowers'
                     onClick = { e => {
                         e.stopPropagation()
-                        show('rugby')
+                        show('flowers')
                     }} >
                 </div>
 

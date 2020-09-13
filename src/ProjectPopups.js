@@ -3,7 +3,7 @@ import './carousel.css'
 import Log from './Log'
 import Paws from './Paws'
 import Moms from './Moms'
-import Rugby from './Rugby'
+import Flowers from './Flowers'
 
 export default function({ project, setProject }) {
 
@@ -32,8 +32,8 @@ export default function({ project, setProject }) {
             }
 
             {
-                project === 'rugby' &&
-                <Rugby />
+                project === 'flowers' &&
+                <Flowers />
             }
             
         </div>

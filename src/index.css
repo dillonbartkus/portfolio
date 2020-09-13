@@ -241,8 +241,8 @@ code {
   background-image: url(images/log.png);
 }
 
-#rugby {
-  background-image: url(images/rugby.png);
+#flowers {
+  background-image: url(images/18flogo.png);
 }
 
 #paws {
@@ -261,8 +261,8 @@ code {
   background-image: url(images/log.png) !important;
 }
 
-#rugby.project.dark:hover {
-  background-image: url(images/rugby.png) !important;
+#flowers.project.dark:hover {
+  background-image: url(images/18flogo.png) !important;
 }
 
 #moms.project.dark:hover {
@@ -717,8 +717,8 @@ and (-webkit-min-device-pixel-ratio: 1.5)  {
     background-image: url(images/log.png) !important;
   }
   
-  #rugby:hover {
-    background-image: url(images/rugby.png) !important;
+  #flowers:hover {
+    background-image: url(images/18flogo.png) !important;
   }
   
   #moms:hover {
@@ -729,30 +729,21 @@ and (-webkit-min-device-pixel-ratio: 1.5)  {
     background-image: url(images/paws.png) !important;
   }
 
-  .popup {
-    width: 100%;
-  }
-
-  .project-details {
-    display: flex;
-    flex-direction: column;
-  }
-
   .carousel {
-    order: 3;
     margin-top: 5%;
-    height: 50% !important;
+  }
+
+  .carousel-cell > p {
+    font-size: 14px;
   }
 
   .project-link {
-    order: 2;
     margin: 5% auto;
   }
 
   .project-desc {
     font-size: 16px;
     margin: 5%;
-    order: 1;
   }
 
   .title {
@@ -781,15 +772,6 @@ and (-webkit-min-device-pixel-ratio: 1.5)  {
   input[type="submit"] {
     margin-top: 2%;
     width: 33%;
-  }
-
-}
-
-@media only screen and (max-width: 400px) {
-
-  .carousel {
-    height: 35% !important;
-    margin-top: 10%;
   }
 
 }
