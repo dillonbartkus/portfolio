@@ -46,7 +46,7 @@ export default function() {
             {Carousel()}
 
             <h2
-            onClick = { () => window.open('https://playrugbyusa.org') }
+            onClick = { () => window.open('https://www.1800flowers.com') }
             className = 'project-link'>Visit Site</h2>
 
             <p className = 'project-desc'>
