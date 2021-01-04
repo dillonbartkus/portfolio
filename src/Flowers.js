@@ -2,7 +2,6 @@ import React from 'react'
 import Flickity from 'react-flickity-component'
 import one from './images/flowers-screenshot1.png'
 import two from './images/flowers-screenshot2.png'
-import three from './images/flowers-screenshot3.png'
 import four from './images/flowers-screenshot4.png'
 import five from './images/flowers-screenshot5.png'
 import six from './images/flowers-screenshot6.png'
@@ -29,7 +28,6 @@ export default function() {
         >
           <div className="carousel-cell"> <img src = {one} alt = '' /> <p>I integrated a Twilio chatbot to answer customer service questions.</p> </div>
           <div className="carousel-cell"><img src = {two} alt = '' /> <p>I added a SmartGift Basket widget, which allows customers to send an exchangeable gift.</p> </div>
-          <div className="carousel-cell portrait"><img src = {three} alt = '' /> <p>I implemented Yotpo user reviews onto the homepage.</p> </div>
           <div className="carousel-cell"><img src = {four} alt = '' /> <p>I set up the subscription service, which allows customers to have recurring gifts delivered to them every so often.</p> </div>
           <div className="carousel-cell"><img src = {five} alt = '' /> <p>I added the Auth0 pop up authorization to log people in.</p> </div>
           <div className="carousel-cell"><img src = {six} alt = '' /> <p>I built out static pages, such as the plant store.</p> </div>
