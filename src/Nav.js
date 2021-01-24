@@ -30,16 +30,16 @@ export default function Nav({ scroll, darken, home, nav, divide, about }) {
         ref = {nav}
         className = {`nav ${darken ? 'dark' : ''}`} >
 
-            <div className = {`navitem ${homeActive}`} onClick = { () => scroll('home') }
+            <div role = 'button' tabIndex = '0' className = {`navitem ${homeActive}`} onClick = { () => scroll('home') } onKeyDown = { () => scroll('home') }
             >HOME</div>
 
-            <div className = {`navitem ${aboutActive}`} onClick = { () => scroll('about') }
+            <div role = 'button' tabIndex = '0' className = {`navitem ${aboutActive}`} onClick = { () => scroll('about') } onKeyDown = { () => scroll('about') }
             >ABOUT</div>
 
-            <div className = {`navitem ${portActive}`} onClick = { () => scroll('projects') }
+            <div role = 'button' tabIndex = '0' className = {`navitem ${portActive}`} onClick = { () => scroll('projects') } onKeyDown = { () => scroll('projects') }
             >PROJECTS</div>
 
-            <div className = {`navitem ${contactActive}`} onClick = { () => scroll('contact') }
+            <div role = 'button' tabIndex = '0' className = {`navitem ${contactActive}`} onClick = { () => scroll('contact') } onKeyDown = { () => scroll('contact') }
             >CONTACT</div>
             
         </div>

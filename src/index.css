@@ -373,8 +373,9 @@ input[type="submit"] {
   align-self: flex-end;
   background-color: transparent;
   color: #FFFFFF;
-  background-color: #1B242E;
+  background-color: #262F37;
   cursor: pointer;
+  border: 2px solid #FFFFFF;
 }
 
 .success {
@@ -403,6 +404,7 @@ input[type="submit"] {
 .backtotop {
   width: 100%;
   text-align: center;
+  outline: 0;
 }
 
 .backtotop > img {
