@@ -12,7 +12,6 @@ import aws from './images/aws.png'
 import jest from './images/jest.png'
 import webpack from './images/webpack.png'
 import gitlab from './images/gitlab.png'
-import sass from './images/sass.png'
 
 export default function Skills() {    
 

@@ -19,6 +19,16 @@ code {
   background-color: #F5F5F5;
 }
 
+/* handle offline carousel styles */
+.flickity-prev-next-button:nth-of-type(1) {
+  left: 10px;
+  border-radius: 50px;
+}
+.flickity-prev-next-button:nth-of-type(2) {
+  right: 10px;
+  border-radius: 50px;
+}
+
 .intro {
   text-align: center;
   color: #FFFFFF;
