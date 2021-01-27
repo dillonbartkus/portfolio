@@ -154,14 +154,15 @@ code {
 }
 
 .skills {
-  width: 70%;
+  width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
 }
 
 .skill-section {
-  width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .skill-section > h2 {
@@ -597,9 +598,9 @@ input[type="submit"] {
   }
 
   .skill-section {
-    margin: 0 10% !important;
     width: 100%;
     text-align: center;
+    display: block;
   }
 
   .skill-listing {
