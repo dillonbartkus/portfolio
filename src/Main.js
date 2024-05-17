@@ -8,31 +8,31 @@ import ProjectPopups from './ProjectPopups'
 
 export default function Main({ scroll, aboutRef, portRef, divideRef, contactRef, navRef, homeRef }) {
 
-    const [showProject, setShowProject] = useState('')    
+    const [showProject, setShowProject] = useState('')
 
-    return(
+    return (
 
         <div
-        className = 'main'
-        onClick = { () => showProject && setShowProject('') }
+            className='main'
+            onClick={() => showProject && setShowProject('')}
         >
 
-            <Nav darken = {showProject} home = {homeRef} nav = {navRef} divide = {divideRef} about = {aboutRef} port = {portRef} scroll = {scroll}  />
+            <Nav darken={showProject} home={homeRef} nav={navRef} divide={divideRef} about={aboutRef} port={portRef} scroll={scroll} />
 
             {
-            showProject &&
+                showProject &&
 
-                <ProjectPopups project = {showProject} setProject = {setShowProject} />
+                <ProjectPopups project={showProject} setProject={setShowProject} />
 
             }
 
-            <About darken = {showProject} aboutRef = {aboutRef} />
+            <About darken={showProject} aboutRef={aboutRef} />
 
-            <Portfolio darken = {showProject}  portRef = {portRef} show = {setShowProject} />
+            <Portfolio darken={showProject} portRef={portRef} show={setShowProject} />
 
-            <Contact darken = {showProject} divideRef = {divideRef} contactRef = {contactRef} />
+            <Contact darken={showProject} divideRef={divideRef} contactRef={contactRef} />
 
-            <Footer darken = {showProject} scroll = {scroll} />
+            <Footer darken={showProject} scroll={scroll} />
 
         </div>
 

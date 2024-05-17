@@ -3,21 +3,21 @@ import Skills from './Skills'
 
 export default function About({ aboutRef, darken }) {
 
-    return(
+    return (
 
         <div
-        ref = {aboutRef}
-        className = {`about ${darken ? 'dark' : ''}`}
+            ref={aboutRef}
+            className={`about ${darken ? 'dark' : ''}`}
         >
 
-            <h1 className = 'title'>ABOUT</h1>
-            <div className = 'titleunderline'></div>
+            <h1 className='title'>ABOUT</h1>
+            <div className='titleunderline'></div>
 
             <p>
                 A Front-End web developer, who enjoys building responsive web-apps for desktop and mobile using test-driven as well as behavior-driven processes. I am knowledgeable about Javascript design patterns, git pipelines, and unit / integration testing. I have experience working on an agile team with UX and UI designers, data scientists and back-end engineers.
 
                 Currently working at
-                <span onClick = { () => window.open('https://1800flowers.com') }
+                <span onClick={() => window.open('https://1800flowers.com')}
                 >1800 Flowers.com</span>
 
             </p>

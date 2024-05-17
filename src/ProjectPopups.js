@@ -5,15 +5,15 @@ import Paws from './Paws'
 import Moms from './Moms'
 import Flowers from './Flowers'
 
-export default function({ project, setProject }) {
+export default function ({ project, setProject }) {
 
-    return(
+    return (
 
-        <div className = 'popup'
-        onClick = { e => e.stopPropagation()} >
+        <div className='popup'
+            onClick={e => e.stopPropagation()} >
 
-            <div className = 'close-popup'
-            onClick = { () => setProject('') }
+            <div className='close-popup'
+                onClick={() => setProject('')}
             >X</div>
 
             {
@@ -35,7 +35,7 @@ export default function({ project, setProject }) {
                 project === 'flowers' &&
                 <Flowers />
             }
-            
+
         </div>
 
     )

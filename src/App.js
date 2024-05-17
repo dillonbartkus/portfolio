@@ -16,16 +16,16 @@ export default function App() {
     e === 'home' && homeRef.current.scrollIntoView({ behavior: 'smooth' })
     e === 'projects' && portRef.current.scrollIntoView({ behavior: 'smooth' })
     e === 'contact' && contactRef.current.scrollIntoView({ behavior: 'smooth' })
-  }  
-  
+  }
+
   return (
 
-    <div className= "App">
+    <div className="App">
 
-      <Intro homeRef = {homeRef} scroll = {scrollToSection} />
+      <Intro homeRef={homeRef} scroll={scrollToSection} />
 
-      <Main scroll = {scrollToSection} aboutRef = {aboutRef} portRef = {portRef} divideRef = {divideRef}
-      contactRef = {contactRef} navRef = {navRef} homeRef = {homeRef} />
+      <Main scroll={scrollToSection} aboutRef={aboutRef} portRef={portRef} divideRef={divideRef}
+        contactRef={contactRef} navRef={navRef} homeRef={homeRef} />
 
     </div>
 
